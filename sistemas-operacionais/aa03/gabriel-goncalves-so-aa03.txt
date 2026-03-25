@@ -1,0 +1,7 @@
+1) Qual é a finalidade das chamadas de sistema?
+
+Resposta: As chamadas de sistema permitem que programas solicitem serviços ao sistema operacional de forma controlada. Elas funcionam como uma ponte entre as aplicações (modo usuário) e o kernel (modo núcleo), possibilitando acesso seguro a recursos como arquivos, memória, processos e dispositivos. Sem elas, os programas não poderiam utilizar o hardware de maneira organizada e segura.
+
+2) Explique, com suas palavras, qual é a importância do Sistema Operacional (SO).
+
+Resposta: O sistema operacional é essencial porque gerencia os recursos do computador, como CPU, memória e dispositivos, garantindo que funcionem de forma eficiente e organizada. Ele também oferece a interface para interação com o usuário e mantém o equilíbrio entre desempenho, segurança e estabilidade. Sem o SO, o uso do computador seria complexo e desorganizado.

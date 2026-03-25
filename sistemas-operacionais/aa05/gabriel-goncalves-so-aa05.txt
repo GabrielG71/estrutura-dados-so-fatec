@@ -1,0 +1,7 @@
+1) Atualmente, o que é o Windows PowerShell e no que ele se diferencia do Prompt de Comando (cmd)?
+
+Resposta: O CMD é o interpretador clássico do Windows, é a versão nova do MS-DOS, serve para comandos básicos e scripts simples. Já o PowerShell é uma versão muito mais evoluída feita com .NET, aquele framework do C#, sabe? Trabalha com objetos ao invés de texto puro, o que permite automatizar tarefas complexas como gerenciar usuários, serviços e redes. Outra diferença importante é que o PowerShell é multiplataforma, rodando também no Linux e macOS, enquanto o CMD só no Windows.
+
+2) O que é o Windows Terminal?
+
+Resposta: O Windows Terminal é uma interface gráfica moderna que serve como uma espécie de "janela unificada" para rodar diferentes shells, como o CMD, o PowerShell e até o Linux via WSL, tudo em abas dentro de um mesmo lugar. Está de graça na Microsoft Store.

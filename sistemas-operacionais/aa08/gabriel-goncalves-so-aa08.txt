@@ -1,0 +1,7 @@
+1) Defina o que é Condição de Corrida e o que é Região Crítica.
+
+Resposta: A Condição de Corrida ocorre quando dois ou mais processos ou threads tentam acessar e manipular dados compartilhados simultaneamente, resultando em um resultado imprevisível que depende da ordem específica de execução. Para evitar esse problema, utilizamos o conceito de Região Crítica, que é o trecho de código onde esses recursos compartilhados são acessados.
+
+2) Explique para que serve a Exclusão Mútua e apresente cinco Soluções para Exclusão Mútua. 
+
+Resposta: A Exclusão Mútua serve justamente para garantir que, se um processo estiver executando sua região crítica, nenhum outro processo possa entrar na sua própria região crítica, assegurando a integridade dos dados. Existem diversas soluções para implementar a exclusão mútua, sendo elas: a espera ocupada (ou busy waiting), a desabilitação de interrupções, o uso de variáveis de travamento (lock variables), o algoritmo de Peterson e a utilização de semáforos.

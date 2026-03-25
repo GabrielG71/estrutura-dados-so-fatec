@@ -1,0 +1,7 @@
+1) Você possui alguma experiência com instalação e/ou configuração de sistema operacional?
+
+Resposta: Sim, tenho certa experiência já, tenho um desktop com Windows 11, porém, meu notebook que levo para a faculdade é Linux, especificamente a distro é Ubuntu. Comecei tentando usar dual boot no notebook, e funcionava exatamente como esperado, só que percebi, que seria melhor utilizar 100% Linux. E, nesse processo estava com preguiça de formatar, acabei indo particionar com o Gparted e acabei ficando só com 56gb, o resto ficou inutilizável, dai tive que formatar, mesmo dando errado, aprendi bastante nesse processo. E, em geral formato frequentemente e estou sempre mexendo nas configurações tanto do meu Windows, quanto do meu Ubuntu, alias, estou pensando em trocar a distro que uso no meu notebook.  
+
+2) Qual sua expectativa com a disciplina de SO? Ou seja, o que você espera aprender aqui.
+
+Resposta: Em geral é aprender, acredito que já tenho uma base, mas, aprimorar de uma forma geral, principalmente essa parte de partição que comentei na questão 1, entender melhor sobre Kernels Linux de forma geral também. Minha ideia também era migrar o meu desktop para alguma distro Linux também, vou usar essa disciplina para ajudar a tomar essa decisão.

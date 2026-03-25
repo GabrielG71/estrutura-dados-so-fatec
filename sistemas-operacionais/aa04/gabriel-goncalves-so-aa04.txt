@@ -1,0 +1,7 @@
+1) Qual material lhe deu mais informações sobre o tema virtualização? Indique o link se for algum material online.
+
+Resposta: A documentação da Oracle VirtualBox sobre virtualização, ela é bem interessante, é daquele software famoso de máquina virtual, sabe? Bem intuitivo e legal, vou deixar o link aqui: https://www.oracle.com/br/virtualization/virtualbox/#simplify. Nele tem um overview, mas, se quiser se aprofundar mais sobre, tem como baixar o PDF com a documentação completa.
+
+2) Qual software vocês utilizariam para simular um dispositivo móvel rodando o sistema operacional Android?
+
+Resposta: Se eu quero ter uma visão melhor para desenvolvimento e entender se ficaria legal no Android, sem dúvida nenhuma, eu optaria pelo Android Studio, que é uma ferramenta muito completa e otimizada. Porém, se for pra entretenimento como jogos e coisas afins, existem emuladores interessantes como o Bluestacks, que eu já utilizei bastante.

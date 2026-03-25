@@ -1,0 +1,7 @@
+1) Qual a finalidade da funcao JOIN?
+ 
+Resposta: A funcao JOIN tem como finalidade sincronizar a execucao de threads. Quando uma thread chama JOIN em relacao a outra, ela fica bloqueada ate que a thread alvo termine sua execucao. Isso garante que o fluxo de execucao da thread chamadora so prossiga apos a conclusao da thread esperada, evitando o uso de dados ainda nao produzidos. Alem da sincronizacao, o JOIN tambem e responsavel por liberar os recursos associados a thread finalizada, como sua pilha de execucao e seu bloco de controle. Sem a chamada de JOIN ou de DETACH, esses recursos permanecem retidos pelo sistema mesmo apos o termino da thread, causando um vazamento de recursos.
+ 
+2) Informe quais foram os exemplos citados para cada tipo de thread apresentado.
+ 
+Resposta: Conforme apresentado no material, os tipos de thread foram acompanhados dos seguintes exemplos: para as threads em nivel de usuario (User-Level Threads), foram citados o POSIX Pthreads em implementacao de espaco de usuario e as Green Threads da linguagem Java em sua implementacao antiga na JVM; para as threads em nivel de kernel (Kernel-Level Threads), os exemplos apresentados foram as threads do sistema Windows e as threads do sistema Solaris no modelo de mapeamento um-para-um com o kernel; e para o modelo hibrido, que combina threads de usuario com threads de kernel em uma relacao de muitos-para-muitos, o exemplo citado foi o modelo two-level scheduling presente no sistema operacional Solaris.

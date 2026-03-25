@@ -1,0 +1,7 @@
+1) Conforme explicacao do Prof. Jo Ueyama, qual e a condicao que gera um impasse (deadlock) no Jantar dos Filosofos?
+ 
+Resposta: Conforme explicado pelo Prof. Jo Ueyama, a condicao que gera o impasse no problema do Jantar dos Filosofos ocorre quando todos os filosofos pegam simultaneamente o garfo a sua esquerda. Nessa situacao, cada filosofo segura um garfo e fica aguardando o garfo da direita, que esta sendo retido pelo filosofo ao lado. Como nenhum deles libera o garfo que ja possui enquanto espera pelo outro, forma-se uma espera circular entre todos os processos, o que caracteriza o deadlock. Nenhum filosofo consegue comer, e todos ficam bloqueados indefinidamente.
+ 
+2) Segundo o Prof. Jo Ueyama, como pode ser evitado o problema de inanacao de um escritor, no problema dos Leitores e Escritores?
+ 
+Resposta: Segundo o Prof. Jo Ueyama, o problema de inanacao do escritor no problema dos Leitores e Escritores pode ser evitado impedindo que novos leitores entrem na regiao critica enquanto houver um escritor aguardando acesso. Na abordagem basica do problema, leitores tem prioridade, o que pode fazer com que um escritor aguarde indefinidamente caso novos leitores continuem chegando. Para resolver isso, quando um escritor sinaliza sua intencao de escrever, os leitores que chegam depois devem esperar, garantindo que o escritor sera atendido em tempo finito e eliminando assim a possibilidade de inanacao.

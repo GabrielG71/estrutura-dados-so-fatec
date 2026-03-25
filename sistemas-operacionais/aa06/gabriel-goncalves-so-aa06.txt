@@ -1,0 +1,7 @@
+1) Quais foram os quatro componentes do processo apresentados no vídeo?  
+
+Resposta: Conforme apresentado no vídeo, os quatro componentes essenciais de um processo são: o conjunto de instruções a serem executadas, o espaço de endereçamento na memória para o trabalho do processo, o contexto de hardware, que inclui registradores como o Program Counter, e o contexto de software, que abrange informações temporárias como variáveis e arquivos abertos.
+
+2) Para um processo, o que é sofrer de inanição (starving)?
+
+Resposta: Segundo o vídeo, sofrer de inanição (starvation) significa que um processo pode nunca ser executado pelo processador. Isso ocorre quando processos de prioridade mais alta continuam chegando, impedindo que processos de prioridade menor acessem a CPU, resultando no que o palestrante chama de "fome" do processo.

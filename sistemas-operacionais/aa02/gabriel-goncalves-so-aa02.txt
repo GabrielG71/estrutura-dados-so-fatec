@@ -1,0 +1,7 @@
+1) Você entendeu a diferença entre Mainframes e Supercomputadores? (apenas sim ou não, não precisa explicar sua resposta)
+
+Resposta:sim
+
+2) Qual é o SO utilizado nos mainframes comentados na palestra? (isto é falado 1x na primeira parte da palestra e 1x na segunda parte)
+
+Resposta: z/OS, mas, muitos utilizam Linux também.

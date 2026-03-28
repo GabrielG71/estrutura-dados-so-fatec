@@ -216,27 +216,54 @@ def bloco_dica(body: str) -> list:
 
 # ─── Tabela de conteúdo ────────────────────────────────────────────────────────
 def bloco_tabela(cabecalho: list, linhas: list) -> list:
-    data = [cabecalho] + linhas
+    """
+    Constrói tabela com quebra de linha automática em todas as células.
+    Células são envolvidas em Paragraph para garantir word-wrap correto,
+    evitando transbordamento em qualquer tamanho de tela ou papel.
+    """
+    estilo_cabecalho = ParagraphStyle(
+        name="_TbCab",
+        fontName="Helvetica-Bold",
+        fontSize=9,
+        textColor=COR_BRANCO,
+        leading=13,
+        alignment=TA_CENTER,
+        wordWrap='CJK',
+    )
+    estilo_corpo = ParagraphStyle(
+        name="_TbCorp",
+        fontName="Helvetica",
+        fontSize=9,
+        textColor=COR_TEXTO,
+        leading=13,
+        alignment=TA_LEFT,
+        wordWrap='CJK',
+    )
+
+    def celula(texto, estilo):
+        return Paragraph(str(texto), estilo)
+
+    data = (
+        [[celula(c, estilo_cabecalho) for c in cabecalho]] +
+        [[celula(c, estilo_corpo)     for c in linha] for linha in linhas]
+    )
+
     largura_col = 165 * mm / len(cabecalho)
-    t = Table(data, colWidths=[largura_col] * len(cabecalho))
+    t = Table(data, colWidths=[largura_col] * len(cabecalho), repeatRows=1)
     t.setStyle(TableStyle([
         # Cabeçalho
-        ("BACKGROUND",   (0, 0), (-1, 0),  COR_PRIMARIA),
-        ("TEXTCOLOR",    (0, 0), (-1, 0),  COR_BRANCO),
-        ("FONTNAME",     (0, 0), (-1, 0),  "Helvetica-Bold"),
-        ("FONTSIZE",     (0, 0), (-1, 0),  10),
-        ("ALIGN",        (0, 0), (-1, 0),  "CENTER"),
+        ("BACKGROUND",    (0, 0), (-1, 0),  COR_PRIMARIA),
+        ("ALIGN",         (0, 0), (-1, 0),  "CENTER"),
         # Corpo
-        ("FONTNAME",     (0, 1), (-1, -1), "Helvetica"),
-        ("FONTSIZE",     (0, 1), (-1, -1), 10),
-        ("ROWBACKGROUNDS",(0, 1),(-1, -1), [COR_BRANCO, COR_CINZA_CLARO]),
-        ("ALIGN",        (0, 1), (-1, -1), "LEFT"),
-        ("VALIGN",       (0, 0), (-1, -1), "MIDDLE"),
+        ("ROWBACKGROUNDS",(0, 1), (-1, -1), [COR_BRANCO, COR_CINZA_CLARO]),
+        ("ALIGN",         (0, 1), (-1, -1), "LEFT"),
+        ("VALIGN",        (0, 0), (-1, -1), "TOP"),
         # Grid
-        ("GRID",         (0, 0), (-1, -1), 0.5, colors.HexColor("#B0BEC5")),
-        ("TOPPADDING",   (0, 0), (-1, -1), 6),
-        ("BOTTOMPADDING",(0, 0), (-1, -1), 6),
-        ("LEFTPADDING",  (0, 0), (-1, -1), 8),
+        ("GRID",          (0, 0), (-1, -1), 0.5, colors.HexColor("#B0BEC5")),
+        ("TOPPADDING",    (0, 0), (-1, -1), 6),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
+        ("LEFTPADDING",   (0, 0), (-1, -1), 8),
+        ("RIGHTPADDING",  (0, 0), (-1, -1), 6),
     ]))
     return [t, Spacer(1, 8)]
 

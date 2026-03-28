@@ -1,0 +1,38 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-deadlocks-so",
+  "variant": "without_skill",
+  "pass_rate": 0.8333333333333334,
+  "expectations": [
+    {
+      "text": "PDF file was generated and has more than 1 page",
+      "passed": true,
+      "evidence": "text length: 968"
+    },
+    {
+      "text": "PDF mentions all 4 Coffman conditions: mutual exclusion, hold-and-wait, no preemption, circular wait",
+      "passed": true,
+      "evidence": "4/4 found"
+    },
+    {
+      "text": "PDF mentions Banker's Algorithm (Algoritmo do Banqueiro or Banker)",
+      "passed": true,
+      "evidence": "found"
+    },
+    {
+      "text": "PDF covers at least 2 of: detection, prevention, avoidance (detecção, prevenção, esquiva)",
+      "passed": true,
+      "evidence": "3/3 found"
+    },
+    {
+      "text": "Simulado section has 4 or more questions",
+      "passed": false,
+      "evidence": "found 0"
+    },
+    {
+      "text": "PDF contains a GABARITO section",
+      "passed": true,
+      "evidence": "found"
+    }
+  ]
+}

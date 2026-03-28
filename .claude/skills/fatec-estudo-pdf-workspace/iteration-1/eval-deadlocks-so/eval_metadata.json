@@ -1,0 +1,13 @@
+{
+  "eval_id": 1,
+  "eval_name": "deadlocks-so",
+  "prompt": "me faz um material de estudo sobre Deadlocks pra SO — as 4 condições de Coffman, estratégias de tratamento, tudo isso. Quero com simulado no final",
+  "assertions": [
+    {"text": "PDF file was generated and has more than 1 page", "id": "deadlock-pdf-exists"},
+    {"text": "PDF mentions all 4 Coffman conditions (mutual exclusion, hold-and-wait, no preemption, circular wait)", "id": "deadlock-coffman-4-conditions"},
+    {"text": "PDF mentions Banker's Algorithm (Algoritmo do Banqueiro or Banker)", "id": "deadlock-banker-algorithm"},
+    {"text": "PDF covers at least 2 of: detection, prevention, avoidance", "id": "deadlock-three-strategies"},
+    {"text": "Simulado section has 4 or more questions", "id": "deadlock-simulado-questions"},
+    {"text": "PDF contains a GABARITO section", "id": "deadlock-has-gabarito"}
+  ]
+}

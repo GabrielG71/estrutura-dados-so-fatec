@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "pilha-ed",
+  "prompt": "gera um PDF de pilha (LIFO) — implementação em C, push/pop/peek, com questões de código no simulado tipo completar a função",
+  "assertions": []
+}

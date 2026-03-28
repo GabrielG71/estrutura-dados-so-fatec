@@ -1,0 +1,38 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-pilha-ed",
+  "variant": "with_skill",
+  "pass_rate": 1.0,
+  "expectations": [
+    {
+      "text": "PDF file was generated and has more than 1 page",
+      "passed": true,
+      "evidence": "text length: 7966"
+    },
+    {
+      "text": "PDF contains push, pop, and peek functions in C code",
+      "passed": true,
+      "evidence": "found: ['push', 'pop', 'peek']"
+    },
+    {
+      "text": "PDF contains an ASCII stack diagram (TOP arrow or vertical stack representation)",
+      "passed": true,
+      "evidence": "found"
+    },
+    {
+      "text": "Simulado contains at least one code-completion question (tipo: codigo)",
+      "passed": true,
+      "evidence": "found"
+    },
+    {
+      "text": "PDF contains a GABARITO section with commented answers",
+      "passed": true,
+      "evidence": "found"
+    },
+    {
+      "text": "PDF explicitly explains LIFO principle (Last In, First Out)",
+      "passed": true,
+      "evidence": "found"
+    }
+  ]
+}

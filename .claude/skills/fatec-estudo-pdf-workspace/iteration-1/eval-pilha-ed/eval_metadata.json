@@ -1,0 +1,13 @@
+{
+  "eval_id": 2,
+  "eval_name": "pilha-ed",
+  "prompt": "gera um PDF de pilha (LIFO) — implementação em C, push/pop/peek, com questões de código no simulado tipo completar a função",
+  "assertions": [
+    {"text": "PDF file was generated and has more than 1 page", "id": "pilha-pdf-exists"},
+    {"text": "PDF contains push, pop, and peek functions in C code", "id": "pilha-has-push-pop-peek"},
+    {"text": "PDF contains an ASCII stack diagram (TOP arrow or vertical stack representation)", "id": "pilha-has-ascii-diagram"},
+    {"text": "Simulado contains at least one code-completion question", "id": "pilha-simulado-has-code-question"},
+    {"text": "PDF contains a GABARITO section with commented answers", "id": "pilha-has-gabarito"},
+    {"text": "PDF explicitly explains LIFO principle (Last In, First Out)", "id": "pilha-mentions-lifo"}
+  ]
+}

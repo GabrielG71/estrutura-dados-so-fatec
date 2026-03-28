@@ -1,0 +1,260 @@
+{
+  "skill_name": "fatec-estudo-pdf",
+  "iteration": 1,
+  "configs": [
+    {
+      "name": "with_skill",
+      "mean_pass_rate": 1.0,
+      "n_evals": 3,
+      "evals": [
+        {
+          "config_name": "with_skill",
+          "eval_name": "eval-bst-ed",
+          "eval_id": 0,
+          "pass_rate": 1.0,
+          "total_tokens": 0,
+          "duration_ms": 0,
+          "expectations": [
+            {
+              "text": "PDF file was generated and has more than 1 page",
+              "passed": true,
+              "evidence": "text length: 10603"
+            },
+            {
+              "text": "PDF text contains C99 struct definition (struct No or typedef struct)",
+              "passed": true,
+              "evidence": "found struct"
+            },
+            {
+              "text": "PDF contains an ASCII tree diagram showing nodes with / \\ characters or [value] boxes",
+              "passed": true,
+              "evidence": "diagram found"
+            },
+            {
+              "text": "Simulado section has 5 or more questions",
+              "passed": true,
+              "evidence": "found 12 questions"
+            },
+            {
+              "text": "PDF contains a GABARITO section with commented answers",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "PDF covers inserir, buscar, and remover operations (or equivalent Portuguese/English terms)",
+              "passed": true,
+              "evidence": "found: ['inserir', 'buscar', 'remover']"
+            }
+          ]
+        },
+        {
+          "config_name": "with_skill",
+          "eval_name": "eval-deadlocks-so",
+          "eval_id": 1,
+          "pass_rate": 1.0,
+          "total_tokens": 0,
+          "duration_ms": 0,
+          "expectations": [
+            {
+              "text": "PDF file was generated and has more than 1 page",
+              "passed": true,
+              "evidence": "text length: 9305"
+            },
+            {
+              "text": "PDF mentions all 4 Coffman conditions: mutual exclusion, hold-and-wait, no preemption, circular wait",
+              "passed": true,
+              "evidence": "4/4 found"
+            },
+            {
+              "text": "PDF mentions Banker's Algorithm (Algoritmo do Banqueiro or Banker)",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "PDF covers at least 2 of: detection, prevention, avoidance (detecção, prevenção, esquiva)",
+              "passed": true,
+              "evidence": "3/3 found"
+            },
+            {
+              "text": "Simulado section has 4 or more questions",
+              "passed": true,
+              "evidence": "found 10"
+            },
+            {
+              "text": "PDF contains a GABARITO section",
+              "passed": true,
+              "evidence": "found"
+            }
+          ]
+        },
+        {
+          "config_name": "with_skill",
+          "eval_name": "eval-pilha-ed",
+          "eval_id": 2,
+          "pass_rate": 1.0,
+          "total_tokens": 0,
+          "duration_ms": 0,
+          "expectations": [
+            {
+              "text": "PDF file was generated and has more than 1 page",
+              "passed": true,
+              "evidence": "text length: 7966"
+            },
+            {
+              "text": "PDF contains push, pop, and peek functions in C code",
+              "passed": true,
+              "evidence": "found: ['push', 'pop', 'peek']"
+            },
+            {
+              "text": "PDF contains an ASCII stack diagram (TOP arrow or vertical stack representation)",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "Simulado contains at least one code-completion question (tipo: codigo)",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "PDF contains a GABARITO section with commented answers",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "PDF explicitly explains LIFO principle (Last In, First Out)",
+              "passed": true,
+              "evidence": "found"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "without_skill",
+      "mean_pass_rate": 0.8333333333333334,
+      "n_evals": 3,
+      "evals": [
+        {
+          "config_name": "without_skill",
+          "eval_name": "eval-bst-ed",
+          "eval_id": 0,
+          "pass_rate": 0.6666666666666666,
+          "total_tokens": 12689,
+          "duration_ms": 23358,
+          "expectations": [
+            {
+              "text": "PDF file was generated and has more than 1 page",
+              "passed": true,
+              "evidence": "text length: 1111"
+            },
+            {
+              "text": "PDF text contains C99 struct definition (struct No or typedef struct)",
+              "passed": true,
+              "evidence": "found struct"
+            },
+            {
+              "text": "PDF contains an ASCII tree diagram showing nodes with / \\ characters or [value] boxes",
+              "passed": true,
+              "evidence": "diagram found"
+            },
+            {
+              "text": "Simulado section has 5 or more questions",
+              "passed": false,
+              "evidence": "found 3 questions"
+            },
+            {
+              "text": "PDF contains a GABARITO section with commented answers",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "PDF covers inserir, buscar, and remover operations (or equivalent Portuguese/English terms)",
+              "passed": false,
+              "evidence": "found: ['inserir']"
+            }
+          ]
+        },
+        {
+          "config_name": "without_skill",
+          "eval_name": "eval-deadlocks-so",
+          "eval_id": 1,
+          "pass_rate": 0.8333333333333334,
+          "total_tokens": 0,
+          "duration_ms": 0,
+          "expectations": [
+            {
+              "text": "PDF file was generated and has more than 1 page",
+              "passed": true,
+              "evidence": "text length: 968"
+            },
+            {
+              "text": "PDF mentions all 4 Coffman conditions: mutual exclusion, hold-and-wait, no preemption, circular wait",
+              "passed": true,
+              "evidence": "4/4 found"
+            },
+            {
+              "text": "PDF mentions Banker's Algorithm (Algoritmo do Banqueiro or Banker)",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "PDF covers at least 2 of: detection, prevention, avoidance (detecção, prevenção, esquiva)",
+              "passed": true,
+              "evidence": "3/3 found"
+            },
+            {
+              "text": "Simulado section has 4 or more questions",
+              "passed": false,
+              "evidence": "found 0"
+            },
+            {
+              "text": "PDF contains a GABARITO section",
+              "passed": true,
+              "evidence": "found"
+            }
+          ]
+        },
+        {
+          "config_name": "without_skill",
+          "eval_name": "eval-pilha-ed",
+          "eval_id": 2,
+          "pass_rate": 1.0,
+          "total_tokens": 0,
+          "duration_ms": 0,
+          "expectations": [
+            {
+              "text": "PDF file was generated and has more than 1 page",
+              "passed": true,
+              "evidence": "text length: 824"
+            },
+            {
+              "text": "PDF contains push, pop, and peek functions in C code",
+              "passed": true,
+              "evidence": "found: ['push', 'pop', 'peek']"
+            },
+            {
+              "text": "PDF contains an ASCII stack diagram (TOP arrow or vertical stack representation)",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "Simulado contains at least one code-completion question (tipo: codigo)",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "PDF contains a GABARITO section with commented answers",
+              "passed": true,
+              "evidence": "found"
+            },
+            {
+              "text": "PDF explicitly explains LIFO principle (Last In, First Out)",
+              "passed": true,
+              "evidence": "found"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

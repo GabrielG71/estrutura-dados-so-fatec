@@ -1,0 +1,13 @@
+{
+  "eval_id": 0,
+  "eval_name": "bst-ed",
+  "prompt": "cria um PDF explicando Árvore Binária de Busca com simulado, quero estudar pra prova",
+  "assertions": [
+    {"text": "PDF file was generated and has more than 1 page", "id": "bst-pdf-exists"},
+    {"text": "PDF text contains C99 struct definition (struct No or typedef struct)", "id": "bst-has-c-struct"},
+    {"text": "PDF contains an ASCII tree diagram", "id": "bst-has-ascii-diagram"},
+    {"text": "Simulado section has 5 or more questions", "id": "bst-simulado-5-plus-questions"},
+    {"text": "PDF contains a GABARITO section with commented answers", "id": "bst-has-gabarito"},
+    {"text": "PDF covers inserir, buscar, and remover operations", "id": "bst-covers-operations"}
+  ]
+}
